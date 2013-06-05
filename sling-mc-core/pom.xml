@@ -7,7 +7,6 @@
         <groupId>org.apache.sling.samples</groupId>
         <version>0.1-SNAPSHOT</version>
     </parent>
-    <packaging>bundle</packaging>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>sling-mc-core</artifactId>

@@ -21,6 +21,7 @@
                 <version>2.1.1-SNAPSHOT</version>
                 <executions>
                     <execution>
+                        <id>install-bundle</id>
                         <goals>
                             <goal>install</goal>
                         </goals>
@@ -35,7 +36,10 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Sling-Initial-Content>initial-content</Sling-Initial-Content>
+                        <Sling-Initial-Content>
+                            SLING-INF/initial-content/apps;overwrite:=true;uninstall:=true;path:=/apps,
+                            SLING-INF/initial-content/content;overwrite:=true;uninstall:=false;path:=/content
+                        </Sling-Initial-Content>
                     </instructions>
                 </configuration>
             </plugin>
@@ -43,9 +47,21 @@
     </build>
 
     <dependencies>
+
         <dependency>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

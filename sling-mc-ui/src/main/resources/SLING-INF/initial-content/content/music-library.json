@@ -1,0 +1,64 @@
+{
+    "jcr:primaryType":"sling:Folder",
+    "sling:resourceType":"sling-mc/library",
+    "dream-theater": {
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"sling-mc/artist",
+        "name":"Dream Theater",
+        "images-and-words":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"Images and Words"
+        },
+        "falling-into-infinity":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"Falling into infinity"
+        }
+    },
+    "pink-floyd":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"sling-mc/artist",
+        "name":"Pink Floyd",
+        "division-bell":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"The Division Bell"
+        },
+        "wish-you-were-here":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"Wish you were here"
+        }
+    },
+    "dark-tranquillity":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"sling-mc/artist",
+        "name":"Dark Tranquillity",
+        "the-gallery":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"The Gallery",
+        },
+        "haven":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"Haven"
+        }
+    },
+    "pantera":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"sling-mc/artist",
+        "name":"Pantera",
+        "cowboys-from-hell":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"Cowboys From Hell"
+        },
+        "far-beyond-driven":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"sling-mc/album",
+            "name":"Far Beyond Driven"
+        }
+    }
+}
