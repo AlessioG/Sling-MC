@@ -59,6 +59,11 @@
         </dependency>
 
         <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
