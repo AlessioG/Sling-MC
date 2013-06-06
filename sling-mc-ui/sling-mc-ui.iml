@@ -4,9 +4,10 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="sling-mc-ui-0.1-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="org.apache.sling.samples.sling-mc-ui" bundleVersion="0.1.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Sling-Initial-Content" value="SLING-INF/initial-content/apps;overwrite:=true;uninstall:=true;path:=/apps,SLING-INF/initial-content/content;overwrite:=true;uninstall:=false;path:=/content" />
+          <property key="Export-Package" value="org.apache.sling.samples.slingmc.taglib.*;version=2.2.0" />
+          <property key="Sling-Initial-Content" value="SLING-INF/initial-content/apps;overwrite:=true;uninstall:=true;path:=/apps,SLING-INF/initial-content/libs;overwrite:=true;uninstall:=true;path:=/libs,SLING-INF/initial-content/content;overwrite:=true;uninstall:=false;path:=/content" />
           <property key="Bundle-Name" value="org.apache.sling.samples.sling-mc-ui" />
-          <property key="Include-Resource" value="SLING-INF/initial-content/content/music-library.json=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/content/music-library.json,SLING-INF/initial-content/apps/sling-mc/artist/artist.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/apps/sling-mc/artist/artist.jsp,SLING-INF/initial-content/apps/sling-mc/album/album.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/apps/sling-mc/album/album.jsp,SLING-INF/initial-content/apps/sling-mc/library/library.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/apps/sling-mc/library/library.jsp" />
+          <property key="Include-Resource" value="META-INF/taglib10.tld=$MODULE_DIR$/src/main/resources/META-INF/taglib10.tld,SLING-INF/initial-content/content/music-library.json=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/content/music-library.json,SLING-INF/initial-content/libs/sling/servlet/default/results.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/libs/sling/servlet/default/results.jsp,SLING-INF/initial-content/apps/sling-mc/artist/artist.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/apps/sling-mc/artist/artist.jsp,SLING-INF/initial-content/apps/sling-mc/album/album.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/apps/sling-mc/album/album.jsp,SLING-INF/initial-content/apps/sling-mc/library/library.jsp=$MODULE_DIR$/src/main/resources/SLING-INF/initial-content/apps/sling-mc/library/library.jsp" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -29,6 +30,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.api:2.4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.jcr:jcr:2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet.jsp.jstl:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
   </component>
 </module>
 

@@ -36,8 +36,12 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Export-Package>
+                            org.apache.sling.samples.slingmc.taglib.*;version=2.2.0
+                        </Export-Package>
                         <Sling-Initial-Content>
                             SLING-INF/initial-content/apps;overwrite:=true;uninstall:=true;path:=/apps,
+                            SLING-INF/initial-content/libs;overwrite:=true;uninstall:=true;path:=/libs,
                             SLING-INF/initial-content/content;overwrite:=true;uninstall:=false;path:=/content
                         </Sling-Initial-Content>
                     </instructions>
@@ -68,5 +72,13 @@
             <artifactId>jstl</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
     </dependencies>
 </project>
